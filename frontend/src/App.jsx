@@ -183,10 +183,7 @@ function App() {
     setAnswer("🤖 Thinking..."); 
 
     try {
-      const res = await fetchfetch(
-  process.env.REACT_APP_API_URL
-    ? `${process.env.REACT_APP_API_URL}`/api/ask-ai
-    :  "https://mindmesh-ai-mkvw.onrender.com",{
+      const res = await fetch ("https://onrender.com"{
   method: "POST",
   headers: {
     "Content-Type": "application/json",
