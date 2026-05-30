@@ -55,13 +55,9 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model("User", userSchema);
-
-// ================= HOME ROUTE =================
-
 app.get("/", (req, res) => {
-  res.send("MindMesh AI Backend Running ✅");
+  res.send("Backend Running 🚀");
 });
-
 
 
 // ================= AUTH ROUTES =================

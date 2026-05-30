@@ -20,8 +20,10 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API = "http://localhost:5000/api/employees";
-
+const API =
+  process.env.REACT_APP_API_URL
+    ? `${process.env.REACT_APP_API_URL}`/api/employees
+    : "http://localhost:5000/api/employees";
 function App() {
 
   const [employees, setEmployees] = useState([]);
@@ -181,7 +183,10 @@ function App() {
     setAnswer("🤖 Thinking..."); 
 
     try {
-      const res = await fetch("http://localhost:5000/api/ask-ai", {
+      const res = await fetchfetch(
+  process.env.REACT_APP_API_URL
+    ? `${process.env.REACT_APP_API_URL}`/api/ask-ai
+    : "http://localhost:5000/api/ask-ai",{
   method: "POST",
   headers: {
     "Content-Type": "application/json",
