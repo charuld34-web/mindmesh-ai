@@ -183,7 +183,7 @@ function App() {
     setAnswer("🤖 Thinking..."); 
 
     try {
-      const res = await fetch("https://onrender.com",{
+      const res = await fetch("https://mindmesh-ai-mkvw.onrender.com",{
   method: "POST",
   headers: {
     "Content-Type": "application/json",
