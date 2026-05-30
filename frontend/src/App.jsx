@@ -186,7 +186,7 @@ function App() {
       const res = await fetchfetch(
   process.env.REACT_APP_API_URL
     ? `${process.env.REACT_APP_API_URL}`/api/ask-ai
-    : "http://localhost:5000/api/ask-ai",{
+    :  "https://mindmesh-ai-mkvw.onrender.com",{
   method: "POST",
   headers: {
     "Content-Type": "application/json",

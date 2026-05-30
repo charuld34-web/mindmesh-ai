@@ -15,7 +15,7 @@ function Login({ setIsLoggedIn }) {
 
     try {
       if (isSignUp) {
-        const res = await axios.post("http://localhost:5000/api/auth/signup", {
+        const res = await axios.post(" https://mindmesh-ai-mkvw.onrender.com", {
           username: username,
           password: password
         });
@@ -23,7 +23,7 @@ function Login({ setIsLoggedIn }) {
         setIsSignUp(false);
         setPassword("");
       } else {
-        const res = await axios.post("http://localhost:5000/api/auth/login", {
+        const res = await axios.post(" https://mindmesh-ai-mkvw.onrender.com", {
           username: username,
           password: password
         });
