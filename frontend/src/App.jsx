@@ -20,10 +20,8 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API =
-  process.env.REACT_APP_API_URL
-    ? `${process.env.REACT_APP_API_URL}`/api/employees
-    : "http://localhost:5000/api/employees";
+const BASE_URL = "https://mindmesh-ai-mkvw.onrender.com";
+const API = `${BASE_URL}/api/employees`;
 function App() {
 
   const [employees, setEmployees] = useState([]);
@@ -183,7 +181,7 @@ function App() {
     setAnswer("🤖 Thinking..."); 
 
     try {
-      const res = await fetch("https://onrender.com",{
+      const res = await fetch("https://mindmesh-ai-mkvw.onrender.com/api/ask-ai",{
   method: "POST",
   headers: {
     "Content-Type": "application/json",

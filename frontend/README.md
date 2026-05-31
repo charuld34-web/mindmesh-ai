@@ -1,16 +1,40 @@
-# React + Vite
+# 🧠 MindMesh AI — Advanced HR & Team Productivity Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindMesh AI is an enterprise-grade, full-stack (MERN) analytics dashboard designed to monitor employee productivity, visualize team metrics in real-time, and leverage *Google Gemini Generative AI* to answer complex contextual queries directly from a live cloud database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Deployment
+* 🌐 *Frontend Application (Vercel):* [Paste your Vercel Link Here]
+* ⚙️ *Backend REST API Node (Render):* [Paste your Render Link Here]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Core Technical Features
 
-## Expanding the ESLint configuration
+### 🤖 1. Context-Aware Gemini AI Insights Node
+* *Live Database Context Integration:* Unlike static chatbots, this module evaluates real-time data fetched from MongoDB Atlas via Express.js REST endpoints.
+* *Algorithmic Analytics:* Dynamically calculates top performers (MVP), team averages, and projects future operational trends based on historical productivity metrics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📊 2. High-Performance Data Visualization
+* *Reactive Components:* Powered by the Recharts library, featuring customized Pie/Donut charts for team distribution and dynamic Bar charts for micro-level productivity tracking.
+* *State Synchronization:* Dashboard visualizations update instantaneously upon handling create, update, or delete (CRUD) mutations, eliminating the need for page hard-reloads.
+
+### 🔐 3. Secured Session Persistence & State Management
+* *Authentication Workflow:* Implements LocalStorage-backed state retention to maintain user sessions across router states securely.
+* *Micro-Interactions:* Integrates Framer Motion to provide high-fidelity, smooth UI animations, including reactive toast notifications and layout transitions.
+
+### 📄 4. One-Click Executive PDF Report Generation
+* *Client-Side Rendering Engine:* Combines html2canvas and jspdf to convert DOM states into a high-density, vector-mapped PDF report for offline executive summaries.
+
+---
+
+## 🛠️ System Architecture & Tech Stack
+
+* *Frontend Architecture:* React.js (Functional components, Custom hooks, and useMemo hooks for memory/computational optimization).
+* *UI & Animation Framework:* Framer Motion (Declarative animations).
+* *Data Visualization:* Recharts Component Library.
+* *Backend Infrastructure:* Node.js, Express.js (RESTful API Design, CORS configuration, asynchronous request handling).
+* *Database Layer:* MongoDB Atlas (Cloud Cluster deployment).
+* *LLM Engine:* Google Gemini 1.5 Flash Model.
+*
